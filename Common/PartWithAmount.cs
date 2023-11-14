@@ -8,7 +8,7 @@ namespace WarsztatAPI.Common
 {
     public class PartWithAmount
     {
-        public Food Part { get; set; }
+        public Meal Part { get; set; }
         public int Amount { get; set; }
     }
 }

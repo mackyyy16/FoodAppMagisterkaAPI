@@ -1,19 +1,21 @@
-﻿using MailKit.Net.Smtp;
-using Microsoft.AspNetCore.Mvc;
-using MimeKit;
+﻿using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using WarsztatApi.Entities;
 using WarsztatAPI.DBContexts;
 using WarsztatAPI.Entities;
 
 namespace WarsztatAPI.Controllers
 {
     [ApiController]
-    [Route("api/order")]
-    public class OrderController : ControllerBase
+    [Route("api/meals")]
+    public class MealController : ControllerBase
     {
         private readonly ApplicationContext context;
-        public OrderController(ApplicationContext context)
+
+        public MealController(ApplicationContext context)
         {
             this.context = context;
         }
@@ -21,8 +23,8 @@ namespace WarsztatAPI.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var orders = this.context.order.ToList<Order>();
-            return Ok(orders);
+            var meals = context.meal.ToList<Meal>();
+            return Ok(meals);
         }
     }
 }

@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace WarsztatAPI.Entities
 {
-    public class Repair
+    public class Meal
     {
         [Key]
-        public int id_repair { get; set; }
-        public string start_date { get; set; }
-        public string end_date { get; set; }
-        public string status { get; set; }
+        public int id_meal { get; set; }
+        public string name { get; set; }
+        public float price { get; set; }
         public string description { get; set; }
-        public int price { get; set; }
+        public string image_path { get; set; }
     }
 }

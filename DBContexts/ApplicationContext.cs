@@ -16,11 +16,9 @@ namespace WarsztatAPI.DBContexts
         }
 
         public DbSet<User> user { get; set; }
-        public DbSet<Car> car { get; set; }
-        public DbSet<Repair> repair { get; set; }
-        public DbSet<Food> part { get; set; }
+        public DbSet<Meal> meal { get; set; }
         public DbSet<Order> order { get; set; }
-        public DbSet<RepairPart> repair_part { get; set; }
-        public DbSet<UserRepair> user_repair { get; set; }
+        public DbSet<Restaurant> restaurant { get; set; }
+        public DbSet<Category> category { get; set; }
     }
 }
