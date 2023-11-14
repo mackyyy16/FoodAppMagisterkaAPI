@@ -19,3 +19,14 @@ CREATE TABLE "food" (id_food serial PRIMARY KEY,
 			description VARCHAR (200) NOT NULL, 
 			amount VARCHAR (100) NOT NULL 
 			);
+
+CREATE TABLE "order" (id_order serial PRIMARY KEY,
+				user_id INT NOT NULL,
+				start_date VARCHAR (200) NOT NULL, 
+				end_date VARCHAR (200) NOT NULL, 
+				status VARCHAR (200) NOT NULL, 
+				meals_info VARCHAR (1000) NOT NULL, 
+				order_price VARCHAR (200) NOT NULL, 
+				meals_price VARCHAR (200) NOT NULL, 
+				transport VARCHAR (200) NOT NULL
+			);
