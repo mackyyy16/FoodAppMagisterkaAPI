@@ -10,7 +10,7 @@ CREATE TABLE "user" (id_user serial PRIMARY KEY,
 			role VARCHAR (100) NOT NULL,
 			street VARCHAR (100) NOT NULL,
 			postcode VARCHAR (100) NOT NULL,
-			city VARCHAR (100) NOT NULL,
+			city VARCHAR (100) NOT NULL
 			);
 
 CREATE TABLE "food" (id_food serial PRIMARY KEY,
