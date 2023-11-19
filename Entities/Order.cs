@@ -12,8 +12,8 @@ namespace WarsztatAPI.Entities
         public string end_date { get; set; }
         public string status { get; set; }
         public string meals_info { get; set; }
-        public string order_price { get; set; }
-        public string meals_price { get; set; }
+        public double order_price { get; set; }
+        public double meals_price { get; set; }
         public string transport { get; set; }
     }
 }
